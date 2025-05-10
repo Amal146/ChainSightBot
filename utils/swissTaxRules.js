@@ -1,12 +1,15 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI({
+  apiKey: process.env.GEMINI_API_KEY
+});
 
 exports.interpretWithSwissTaxLaw = async (txData) => {
   const { hash, from, to, value, input, blockNumber } = txData;
   const ethTransferred = parseInt(value, 16) / 1e18;
 
-  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+  const model = genAI.getGenerativeModel({ model: "models/gemini-pro" });
+
 
   const prompt = `
 You are a Swiss crypto tax expert AI assistant. Given the following Ethereum transaction details, explain:
