@@ -1,4 +1,7 @@
-.env
-/node_modules
+
 /.qodo
 /.git
+
+.env
+
+/node_modules
