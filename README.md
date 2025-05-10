@@ -18,7 +18,7 @@ This is the backend for a chatbot that:
 1. Install dependencies:
    ```bash
    npm install
-````
+   ```
 
 2. Add a `.env` file:
 
@@ -73,12 +73,5 @@ Feel free to fork, contribute, or reach out!
 
 ````
 
----
 
-### ✅ Now Run:
 
-```bash
-git add .gitignore README.md
-git commit -m "Cleaned repo, added .gitignore and README"
-git push origin main
-````
