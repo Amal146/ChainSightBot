@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const transactionRoutes = require("./routes/transactionsroutes"); // ✅ Import routes
+const transactionRoutes = require("./routes/transactionRoutes"); 
 
 const app = express();
 
