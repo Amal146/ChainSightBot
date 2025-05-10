@@ -1,5 +1,8 @@
 exports.analyzeTransaction = async (req, res) => {
   const { txHash } = req.body;
+  const { getTransactionDetails } = require('../services/etherscanservice');
+  const { interpretWithSwissTaxLaw } = require('../utils/swissTaxRules');
+
 
   if (!txHash) return res.status(400).json({ error: 'Transaction hash required' });
 
