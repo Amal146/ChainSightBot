@@ -8,7 +8,7 @@ exports.interpretWithSwissTaxLaw = async (txData) => {
   const { hash, from, to, value, input, blockNumber } = txData;
   const ethTransferred = parseInt(value, 16) / 1e18;
 
-  const model = genAI.getGenerativeModel({ model: "models/gemini-pro" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 
   const prompt = `
