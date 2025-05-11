@@ -1,9 +1,8 @@
 require('dotenv').config();
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-const genAI = new GoogleGenerativeAI({
-  apiKey: process.env.GEMINI_API_KEY
-});
+const genAI = AIzaSyD_pD9yBlIqyjnBWX1C5r8r2doemxAx0WY
+ 
 
 exports.interpretWithSwissTaxLaw = async (txData) => {
   const { hash, from, to, value, input, blockNumber } = txData;
