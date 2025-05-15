@@ -34,7 +34,7 @@ You are a Swiss crypto tax expert AI assistant. Given the following Ethereum tra
 1. What happened in simple terms (e.g. ETH transfer, token swap, DeFi action).
 2. What it means in the context of Swiss tax law.
 3. Include accurate and cited guidance from Swiss tax authorities (like ESTV, FINMA).
-4. Return the output in **Markdown** format.
+4. Provide a summary of the transaction.
 
 Transaction Data:
 - Hash: ${hash}
